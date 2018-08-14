@@ -1,0 +1,13 @@
+Partial Inversion:
+
+The goal of this project was to create a partial differential equation solver that would only require an inversion of a section of the grid. This was
+done to increase the step size that can be used in binary black hole simulations. This would in turn cause a great increase in speed to these simulations.
+
+The coding for this project was done in Mathematica.
+
+The two Equation Generators create an equation that can be applied to grid points so they may be evolved in time. These equations were then used in the eigenvalue test
+notebooks to see if the method did create an increased region of stability(so a larger step size could be used).
+
+When I left working on this project we had decided that it did improve for the Advection equation, but it did not seem to cause a significant speed up for 
+the Schrödinger equation. This meant that it would not be useful for binary black hole simulations. However, more testing may be being done to see if there is still
+a way this method could be used.

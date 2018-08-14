@@ -1,0 +1,11 @@
+The Lanczos-Dyche(LD) Method:
+
+The goal of this project was to test the performance of the LD Method when compared to existing methods. 
+
+The majority of the code for this project was done in Mathematica, but Python was used for plotting.
+
+The Python_Plots folder contains a collection of plots created throughout the course of this project and the Python_Plotters folder holds some of the code
+used to make some of those plots(Not all were included only because of the large number of plots).
+
+The Data_Generator Notebooks contain the bulk of the code and they evolve a simple Schrödinger equation test case using different orders of the LD method and compare them
+to the existing RK method and the Pseudo-spectral Fourier method.

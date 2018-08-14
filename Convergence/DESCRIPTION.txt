@@ -1,0 +1,14 @@
+Convergence:
+
+This project was done using Mathematica and Python.
+
+The goal was to ensure the quality of binary black hole simulations by looking at their phase error.
+
+The two Mathematica Notebooks are used to take the raw data from the simulations and calculate the phase error. The multiple version of the notebook is used for 
+automating the process for large amounts of simulations.
+
+The Python script was then used to combine any of the phase error of the simulations into correctly formatted plots.
+
+*** Note about Mathematica Notebooks ***
+Since graduating from the University of Illinois I have lost access to Mathematica. I was unable to clean up my Mathematica scripts as well as I would have liked before
+graduating so I apologize if they are slightly messy.

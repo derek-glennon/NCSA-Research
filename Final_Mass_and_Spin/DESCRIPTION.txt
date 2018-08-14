@@ -1,0 +1,11 @@
+AAS Final Mass and Spin:
+
+This project was done using Python scripts on the local campus cluster and the Blue Waters Supercomputing System.
+
+The goal of this project was to extract the final mass and spin from eccentric binary black hole simulations.
+
+In order to complete this task, I had to pull specific lines of data from the raw simulation data stored within the cluster. I used the single_extract.py
+and multiple_extract.py scripts to do this. The multiple version was used for automating the process for large numbers of simulations. This script also includes
+ways to catch various issues I encountered with the data.
+
+The scripts then outputs data files with the values to be plotted.
