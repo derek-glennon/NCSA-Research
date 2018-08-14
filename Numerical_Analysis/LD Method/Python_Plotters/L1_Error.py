@@ -40,8 +40,6 @@ ax.semilogy(T, error_LD6, 'c-', lw = 3, alpha = 0.5, label = "LD6 FD50")
 
 ax.semilogy(T, error_LD8, 'k-', lw = 3, alpha = 0.5, label = "LD8 FD50")
 
-#plt.legend(loc = 'best')
-
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 0.8, box.height])
 
@@ -49,7 +47,6 @@ ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 
 ax.set_xlabel("Time")
 ax.set_ylabel("$L^1$ Error")
-#plt.title("Courant Number = 0.31831 & FD")
 
 plt.ylim([10**(-16),10**(0)])
 
@@ -91,12 +88,10 @@ ax.semilogy(T, error_LD8, 'k-', lw = 3, alpha = 0.5, label = "LD8 PS")
 box = ax.get_position()
 ax.set_position([box.x0, box.y0, box.width * 0.8, box.height])
 
-#plt.legend(loc = ([.78,.16]))
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 
 ax.set_xlabel("Time")
 ax.set_ylabel("$L^1$ Error")
-#plt.title("Courant Number = 0.31831 & Fourier PS")
 
 ax.set_xlim([0,15])
 ax.set_ylim([10**(-15),10**(-1)])
