@@ -60,31 +60,6 @@ for i in range(len(sim_names)):
 			output_dirs = np.append(output_dirs, path_dirs[j])
 
 
-	#########################
-	#Combine Output Data
-	#########################
-
-	#time = []
-	#irr_mass = []
-	#spin = []
-	#mass = []
-
-	#file_exists = True
-	#file_access = True
-
-	#for j in range(len(output_dirs)):
-	#	temp_path = path + "/" + sim_names[i] + "/" + output_dirs[j] + "/" + sim_names[i] + "/quasilocalmeasures-qlm_scalars..asc"
-	#	if os.path.isfile(temp_path) is True and os.access(temp_path, os.R_OK) is True:
-	#		time = np.append(time, np.genfromtxt(temp_path, usecols=(1)))
-	#		irr_mass = np.append(irr_mass, np.genfromtxt(temp_path, usecols=(19)))
-	#		spin = np.append(spin, np.genfromtxt(temp_path, usecols=(37)))
-	#		mass = np.append(mass, np.genfromtxt(temp_path, usecols=(58)))
-	#	elif os.path.isfile(temp_path) is False:
-	#		file_exists = False
-	#		problem_sims = np.append(problem_sims, sim_names[i] + "-" + output_dirs[j] + "-no scalars file")
-	#	elif  os.access(temp_path, os.R_OK) is False:
-	#		file_access = False
-	#		problem_sims = np.append(problem_sims, sim_names[i] + "-" + output_dirs[j] + "-no access")
 	
 	#########################
         #Get Last Output Data
@@ -108,15 +83,6 @@ for i in range(len(sim_names)):
 			irr_mass = np.append(irr_mass, np.genfromtxt(temp_path, usecols=(19)))
 			spin = np.append(spin, np.genfromtxt(temp_path, usecols=(37)))
 			mass = np.append(mass, np.genfromtxt(temp_path, usecols=(58)))
-			print(len(mass))
-		#elif os.path.isfile(temp_path) is False:
-			#file_exists = False
-			#problem_sims = np.append(problem_sims, sim_names[i] + "-" + last_outputs[j] + "-no scalars file")
-			#print("No Scalars")
-		#elif os.access(temp_path, os.R_OK) is False:
-			#file_access = False
-			#problem_sims = np.append(problem_sims, sim_names[i] + "-" + last_outputs[j] + "-no access")
-			#print("No Access")
 		
 
 
